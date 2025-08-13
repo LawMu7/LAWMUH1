@@ -6,7 +6,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 ENV ADMIN_EMAIL=admin@lawmu7.com
 ENV ADMIN_PASSWORD=Law5110511
-ENV ADMIN_NAME=مدير النظام
+ENV ADMIN_NAME= MGR
 ENV PORT=8000
 EXPOSE 8000
 CMD ["bash","-lc","uvicorn app.main:app --host 0.0.0.0 --port ${PORT}"]
