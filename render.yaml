@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: lawmu7
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: ADMIN_EMAIL
+        value: admin@lawmu7.com
+      - key: ADMIN_PASSWORD
+        value: Law5110511
+      - key: JWT_SECRET
+        generateValue: true

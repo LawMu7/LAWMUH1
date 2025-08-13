@@ -1,0 +1,11 @@
+{
+  "build": { "nixpacks": { "override": { "pythonVersion": "3.11" } } },
+  "deploy": {
+    "startCommand": "uvicorn app.main:app --host 0.0.0.0 --port $PORT",
+    "healthcheckPath": "/"
+  },
+  "variables": {
+    "ADMIN_EMAIL": "admin@lawmu7.com",
+    "ADMIN_PASSWORD": "Law5110511"
+  }
+}
